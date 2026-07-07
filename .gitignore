@@ -1,0 +1,39 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.next-dev-*.log
+frontend/tsconfig.tsbuildinfo
+
+# Environment files (secrets!)
+backend/.env
+frontend/.env.local
+.env
+
+# Local data
+.local-mongo/
+
+# IDE & Agent configs
+.claude/
+.agents/
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Docker volumes
+mongo-data/
+
+# LLM_Agri_Bot has its own git repo
+LLM_Agri_Bot/

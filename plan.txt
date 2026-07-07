@@ -1,0 +1,314 @@
+You are a senior AI product architect and full-stack technical planner.
+
+I have a reference project named `LLM_Agri_Bot`. First, scan and understand the existing project structure, features, tech stack, and implementation approach.
+
+Current reference project:
+
+* It is an agriculture-focused LLM bot.
+* It uses Flask.
+* It is only a reference, not the final product.
+
+Target product:
+We do not want to build only a chatbot. We want to build a complete AI-powered farmer support platform that solves real problems for farmers.
+
+Important changes:
+
+* Replace Flask with FastAPI.
+* Design a scalable backend architecture.
+* Improve the UI significantly.
+* Add more useful features for farmers.
+* Keep the system ready for future mobile app development.
+
+Your task:
+Create a professional Markdown file named:
+
+`AGRI_AI_PLATFORM_ARCHITECTURE.md`
+
+The Markdown file should include the following sections:
+
+1. Project Overview
+
+   * Explain what the new platform is.
+   * Explain how it is different from the existing `LLM_Agri_Bot`.
+   * Explain the goal: solving multiple farmer problems, not just answering questions.
+
+2. Existing Project Analysis
+
+   * Summarize the current `LLM_Agri_Bot` structure.
+   * Mention current features.
+   * Mention limitations.
+   * Mention what should be reused and what should be replaced.
+
+3. Proposed Product Vision
+
+   * AI-powered agriculture assistant.
+   * Crop advisory.
+   * Disease detection.
+   * Weather-based recommendations.
+   * Market price insights.
+   * Government schemes guidance.
+   * Fertilizer and pesticide suggestions.
+   * Soil health advisory.
+   * Farmer community/helpdesk.
+   * Multilingual support.
+   * Mobile app readiness.
+
+4. Target Architecture
+
+   * Frontend architecture.
+   * FastAPI backend architecture.
+   * Database architecture.
+   * AI/LLM service architecture.
+   * Image processing service for crop disease detection.
+   * External API integrations.
+   * Authentication and user management.
+   * Admin dashboard.
+   * Future mobile app architecture.
+
+5. Recommended Tech Stack
+   Use this preferred stack:
+
+   * Frontend: React.js or Next.js
+   * Backend: FastAPI
+   * Database: PostgreSQL
+   * Vector Database: FAISS / Qdrant / Pinecone
+   * Cache: Redis
+   * AI/LLM: OpenAI / Gemini / Claude / local LLM
+   * File Storage: AWS S3 / Azure Blob / local storage for development
+   * Deployment: Docker, Nginx, cloud deployment
+   * Mobile App Future Scope: React Native / Flutter
+
+6. Core Features
+   Break features into modules:
+
+   A. Farmer Profile Management
+
+   * Farmer registration/login
+   * Language preference
+   * Location
+   * Farm size
+   * Crop type
+   * Soil type
+   * Irrigation type
+
+   B. AI Crop Advisory
+
+   * Crop-specific advice
+   * Seasonal recommendations
+   * Sowing and harvesting guidance
+   * Crop rotation suggestions
+
+   C. Crop Disease Detection
+
+   * Farmer uploads crop image
+   * AI detects possible disease
+   * Shows confidence score
+   * Gives treatment suggestions
+   * Suggests prevention steps
+
+   D. Weather Advisory
+
+   * Weather forecast
+   * Rainfall alert
+   * Heat/cold warning
+   * Irrigation recommendation
+   * Pest risk alert based on weather
+
+   E. Market Price Insights
+
+   * Crop mandi prices
+   * Price trend analysis
+   * Best nearby market suggestion
+   * Sell/hold recommendation
+
+   F. Government Schemes Assistant
+
+   * Search relevant schemes
+   * Eligibility checker
+   * Required documents
+   * Application guidance
+
+   G. Soil and Fertilizer Advisory
+
+   * Soil test upload/manual input
+   * Fertilizer recommendation
+   * Nutrient deficiency explanation
+   * Organic and chemical options
+
+   H. AI Chat Assistant
+
+   * Multilingual farmer chatbot
+   * Voice input future support
+   * Context-aware answers based on farmer profile
+   * RAG-based agriculture knowledge base
+
+   I. Admin Dashboard
+
+   * Manage users
+   * Manage crop knowledge base
+   * View farmer queries
+   * Add government schemes
+   * Monitor system usage
+
+   J. Mobile App Future Features
+
+   * Offline access
+   * Voice assistant
+   * Push notifications
+   * Image capture for disease detection
+   * Local language UI
+
+7. UI/UX Plan
+   Design a modern, attractive, farmer-friendly UI:
+
+   * Clean dashboard
+   * Weather cards
+   * Crop health status
+   * AI assistant widget
+   * Market price cards
+   * Government scheme cards
+   * Upload image section
+   * Mobile-first responsive design
+   * Multilingual interface
+   * Simple icons and visual guidance
+
+8. Backend API Design
+   Provide FastAPI route examples:
+
+   * `/auth/register`
+   * `/auth/login`
+   * `/farmers/profile`
+   * `/crops/advisory`
+   * `/disease/detect`
+   * `/weather/advisory`
+   * `/market/prices`
+   * `/schemes/search`
+   * `/soil/recommendation`
+   * `/chat/query`
+   * `/admin/dashboard`
+
+9. Database Schema Plan
+   Include important tables:
+
+   * users
+   * farmer_profiles
+   * farms
+   * crops
+   * crop_advisories
+   * disease_reports
+   * weather_alerts
+   * market_prices
+   * government_schemes
+   * chat_history
+   * uploaded_files
+   * admin_users
+
+10. AI/RAG Architecture
+    Explain:
+
+* Agriculture knowledge base
+* Document ingestion
+* Embeddings
+* Vector search
+* Prompt template
+* LLM response generation
+* Guardrails to reduce hallucination
+* Farmer profile-aware responses
+
+11. Development Phases
+    Create phases with tasks and subtasks.
+
+Phase 1: Existing Project Analysis
+
+* Scan current Flask app
+* Identify routes, templates, models, dependencies
+* Document limitations
+
+Phase 2: Requirement Finalization
+
+* Define farmer problems
+* Define user roles
+* Define feature modules
+* Finalize MVP scope
+
+Phase 3: Architecture Design
+
+* FastAPI backend structure
+* Database design
+* AI service design
+* Frontend structure
+* Deployment plan
+
+Phase 4: Backend Development
+
+* FastAPI setup
+* Auth APIs
+* Farmer profile APIs
+* Crop advisory APIs
+* Chat APIs
+* Disease detection APIs
+* Admin APIs
+
+Phase 5: AI and RAG Development
+
+* Collect agriculture documents
+* Build vector database
+* Create embeddings
+* Build retrieval pipeline
+* Connect LLM
+* Add hallucination control
+
+Phase 6: Frontend Development
+
+* Landing page
+* Farmer dashboard
+* AI chat page
+* Disease detection page
+* Weather advisory page
+* Market price page
+* Scheme finder page
+* Admin dashboard
+
+Phase 7: Testing
+
+* Unit testing
+* API testing
+* UI testing
+* Farmer use-case testing
+* Security testing
+
+Phase 8: Deployment
+
+* Docker setup
+* Environment variables
+* Database migration
+* Cloud deployment
+* Monitoring and logging
+
+Phase 9: Future Enhancements
+
+* Mobile app
+* Voice assistant
+* WhatsApp integration
+* Offline support
+* IoT sensor integration
+* Advanced crop prediction
+
+12. Final Deliverable
+    At the end, provide:
+
+* Complete architecture summary
+* Feature roadmap
+* Folder structure for FastAPI backend
+* Folder structure for frontend
+* Development timeline
+* MVP vs advanced feature separation
+
+Output rules:
+
+* Write only the Markdown file content.
+* Keep it professional and implementation-ready.
+* Avoid unnecessary explanation.
+* Do not write very long paragraphs.
+* Use headings, tables, bullet points, and task breakdowns.
+* Be concise but complete.
